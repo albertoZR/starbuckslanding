@@ -58,3 +58,11 @@ section article a {
     margin-top: -350px;
     margin-left: 850px;
 }
+footer ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+footer ul li {
+    margin: 50px;
+}
