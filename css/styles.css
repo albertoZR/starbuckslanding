@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    width: 100;
 }
 .logo {
     display: inline;
@@ -65,4 +64,22 @@ footer ul {
 }
 footer ul li {
     margin: 50px;
+}
+.circle {
+    position: fixed;
+    bottom: 0; /* Posiciona el círculo en la parte inferior */
+    right: 0; /* Posiciona el círculo en la parte derecha */
+    width: 1100px; /* Ajusta el tamaño del círculo */
+    height: 1100px; /* Ajusta el tamaño del círculo */
+    background: #017143;
+    clip-path: circle(50% at 100% 100%);
+    z-index: -1;
+}
+footer ul li img {
+    transition: transform 0.3s ease; /* Añade una transición suave */
+    cursor: pointer;
+}
+
+footer ul li img:hover {
+    transform: translateY(-50px); /* Mueve la imagen hacia arriba al pasar el cursor */
 }
